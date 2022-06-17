@@ -17,6 +17,7 @@ function generatePassword() {
   var userWantUpperCaseLetters=window.confirm("do you want upper case letters?Yes or No");
 
   var userWantLowerCaseLetters=window.confirm("do you want lower case letters? Yes or No")
+  s
  }
 
 
