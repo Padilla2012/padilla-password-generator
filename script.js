@@ -4,18 +4,21 @@ function generatePassword() {
   var userInput=window.prompt("whats your password")
   var passwordLenght=parseInt(userInput);
   
-  if(passwordLenght < 8 )  {
-  window.alert("password need to be 8 or more charaters");
+  if(passwordLenght < 8 || passwordLenght > 128)  {
+  window.alert("password need to be 8 and no more than 128 characters");
   return
  }
  
- else if(passwordLenght > 128){
-   window.alert("needs to be no more than 128 characters");
-   return
+ 
+  var userWantNumber=window.confirm("do you want numbers? Yes or NO");
+  
+  var userWantSpecialCharacters=window.confirm("do you want special characters? Yes or NO");
+  
+  var userWantUpperCaseLetters=window.confirm("do you want upper case letters?Yes or No");
+
+  var userWantLowerCaseLetters=window.confirm("do you want lower case letters? Yes or No")
  }
 
- 
- }
 
 
 
